@@ -1,2 +1,2 @@
 # ScratchExtensions
-Extensions for scratch 2.0
+Main repository for extensions for scratch 2.0
