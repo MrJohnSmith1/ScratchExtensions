@@ -22,6 +22,9 @@
 	ext.itemOfList=function(a,b){
 		return b[a-1];
 	};
+	ext.parseIntoList=function(a,b){
+		return a.split(b);
+	}
 	
 	
 	
@@ -31,6 +34,7 @@
 			["r", "Add %s to list %s", "addToList"],
 			["r", "Join lists %s %s", "joinTwoLists"],
 			["r", "Item %n of list %s", "itemOfList"],
+			["r", "Split %s with delimiter %s", "parseIntoList"],
 		],
 		
 	};
