@@ -25,10 +25,14 @@
 	};
 	ext.parseIntoList=function(a,b){
 		return a.split(b);
-	}
+	};
 	ext.removeFromList=function(a,b){
 		return (b.slice(0,a-1)).concat(b.slice(a,b.length));
-	}
+	};
+	ext.lengthOfList=function(a){
+		return a.length;
+		
+	};
 	
 	
 	var descriptor={
@@ -39,6 +43,7 @@
 			["r", "Item %n of list %s", "itemOfList"],
 			["r", "Split %s with delimiter %s", "parseIntoList"],
 			["r", "Delete %n of list %s", "removeFromList"],
+			["r", "Length of list %s", "lengthOfList"],
 		],
 		
 	};
