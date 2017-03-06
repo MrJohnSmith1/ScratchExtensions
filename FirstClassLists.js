@@ -1,3 +1,4 @@
+
 (function(ext){
 	ext._shutdown=function(){};
 	ext._getStatus=function(){
@@ -25,7 +26,9 @@
 	ext.parseIntoList=function(a,b){
 		return a.split(b);
 	}
-	
+	ext.removeFromList=function(a,b){
+		return (b.slice(0,a-1)).concat(b.slice(a,b.length));
+	}
 	
 	
 	var descriptor={
@@ -35,6 +38,7 @@
 			["r", "Join lists %s %s", "joinTwoLists"],
 			["r", "Item %n of list %s", "itemOfList"],
 			["r", "Split %s with delimiter %s", "parseIntoList"],
+			["r", "Delete %n of list %s", "removeFromList"],
 		],
 		
 	};
